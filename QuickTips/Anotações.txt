@@ -1,0 +1,7 @@
+
+Manual MarkDown
+https://github.com/gustavoguanabara/git-github/blob/master/manuais-PDF/guia-markdown.pdf
+
+Elementos HTML5
+
+https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element
