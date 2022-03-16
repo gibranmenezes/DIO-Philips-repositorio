@@ -1,0 +1,9 @@
+Display Direction:
+    Estabelece o eixo principal do container.
+
+Eixos:
+    row(padrao): Left to Rigth
+    row - reverse:
+
+    column: coluna unica - cima pra baixo
+    column-reverse
