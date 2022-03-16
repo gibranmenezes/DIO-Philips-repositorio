@@ -7,3 +7,14 @@ Eixos:
 
     column: coluna unica - cima pra baixo
     column-reverse
+
+-=-=-=-=-=-=-=-=-=
+Flex-wrap
+    Define se o itens vao quebrar a linha
+    Padrão: n-quebra
+
+    O reverse coloca em ordem reversa
+
+-=-=-=-=-=-=-=-=-=
+Flex Flow
+Atalho para flex Direction e flex wrap
