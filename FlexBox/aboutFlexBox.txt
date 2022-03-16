@@ -18,3 +18,32 @@ Flex-wrap
 -=-=-=-=-=-=-=-=-=
 Flex Flow
 Atalho para flex Direction e flex wrap
+
+-=-=-=-=-=-=-=-=-=
+Justify Content:
+alinha itens do container
+trata a dist de espaçamentos entre eles
+
+Se o itens ocupam 100% do container = !seaplica
+
+-=-=-=-=-=-=-=-=-=
+Align Items
+alinhamento diferente Row/column
+Permite alinhamento central
+Não precisa saber a altura maxima - vai manter a proporcionalidade
+padrão: stretch
+
+-=-=-=-=-=-=-=-=-=
+Align Content
+alinhamento das linhas do container em relação ao eixo vertical.
+container deve implementar o flex-wrap
+a altura do container > soma das linhas dos items
+
+-=-=-=-=-=-=-=-=-= Flex Items -=-=-=-=-=-=-=-=-=-=-=-=-=-
+Flex Grow
+Define proporcionalidade de crescimento dos itens
+Respeita o tamanho do conteudo interno
+
+-=-=-=-=-=-=-=-=-=
+flex basis 
+Estabelece o tamanho inicial do item antes da distribuição de espaço restante dentro do item. O conteudo disposto serve como base
