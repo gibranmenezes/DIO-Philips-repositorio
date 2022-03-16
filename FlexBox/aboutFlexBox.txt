@@ -47,3 +47,10 @@ Respeita o tamanho do conteudo interno
 -=-=-=-=-=-=-=-=-=
 flex basis 
 Estabelece o tamanho inicial do item antes da distribuição de espaço restante dentro do item. O conteudo disposto serve como base
+-=-=-=-=-=-=-=-=-=
+flex shrink
+Estabelecea a capacidade de redução/compressão do item
+
+-=-=-=-=-=-=-=-=-=
+Flex
+atalho para: grow - shrink - basis nessa ordem
