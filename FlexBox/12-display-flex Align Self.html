@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos Align Selt </title>
+    <style>
+        .container{
+            max-width: 350px;
+            display: flex;
+            border: 2px solid black;
+            margin-bottom: 20px;
+        }
+
+        .item{
+            flex:1;
+            background-color: brown;
+            margin: 5px;
+            text-align: center;
+            font-size: 24px;
+            color: white;
+        }
+
+        .auto{
+            align-self: auto;
+        }
+
+        .f-start{
+            align-self: flex-start;
+        }
+
+        .f-end{
+            align-self: flex-end;
+        }
+
+        .center{
+            align-self: center;
+        }
+
+        .stretch{
+            align-self: stretch;
+        }
+
+        .base{
+            align-self: baseline;
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    <p>auto</p>
+    <div class="container">
+        <div class="item auto">Aertbhhjj</div>
+        <div class="item auto">Lorem ipsum dolor sit amet.</div>
+        <div class="item auto">12345</div>
+        <div class="item auto">item 4</div>
+    </div>
+
+    <p>center</p>
+    <div class="container">
+        <div class="item center">Aertbhhjj</div>
+        <div class="item center">Lorem ipsum dolor sit amet.</div>
+        <div class="item center">12345</div>
+        <div class="item center">item 4</div>
+    </div>
+
+    <p>flex-start</p>
+    <div class="container">
+        <div class="item f-start">Aertbhhjj</div>
+        <div class="item f-start">Lorem ipsum dolor sit amet.</div>
+        <div class="item f-start">12345</div>
+        <div class="item f-start">item 4</div>
+    </div>
+
+    <p>flex-end</p>
+    <div class="container">
+        <div class="item f-end">Aertbhhjj</div>
+        <div class="item f-end">Lorem ipsum dolor sit amet.</div>
+        <div class="item f-end">12345</div>
+        <div class="item f-end">item 4</div>
+    </div>
+
+    <p>baseline</p>
+    <div class="container">
+        <div class="item base">Aertbhhjj</div>
+        <div class="item base">Lorem ipsum dolor sit amet.</div>
+        <div class="item base">12345</div>
+        <div class="item base">item 4</div>
+    </div>
+    
+    <p>stretch</p>
+    <div class="container">
+        <div class="item stretch">Aertbhhjj</div>
+        <div class="item stretch">Lorem ipsum dolor sit amet.</div>
+        <div class="item stretch">12345</div>
+        <div class="item stretch">item 4</div>
+    </div>
+
+    <p>mix</p>
+    <div class="container">
+        <div class="item f-end">Aertbhhjj</div>
+        <div class="item f-start">Lorem ipsum dolor sit amet.</div>
+        <div class="item center">12345</div>
+        <div class="item base">item 4</div>
+        <div class="item stretch">4</div>
+    </div>
+</body>
+</html>

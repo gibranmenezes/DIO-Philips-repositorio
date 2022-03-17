@@ -54,3 +54,11 @@ Estabelecea a capacidade de redução/compressão do item
 -=-=-=-=-=-=-=-=-=
 Flex
 atalho para: grow - shrink - basis nessa ordem
+
+-=-=-=-=-=-=-=-=-=
+Order
+ordenação dos itens
+
+-=-=-=-=-=-=-==-=
+Align Self
+alinhamento individual de cada item
