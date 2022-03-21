@@ -94,11 +94,11 @@ Loops:
 This:
 
     context reference:
-    
-          in an Object ---- 'this' references this Object
+
+          in an Object ----- 'this' references this Object
           alone ----- 'this' references global object (in browsers, window) 
           function ----- ´this' references global object
-          event ---- element wich receves the event
+          event ----- element wich receves the event
 
 
 
