@@ -1,0 +1,118 @@
+Structure:
+
+  function name(parameters){
+    instructions
+
+    return .... (stops the function)
+
+  }
+
+Anonimous function:
+  cons sum = function (a,b) {
+    return a + b;
+  }
+
+IIFE(immediately invoked function Expression)  
+
+(
+  function(){
+    instruction
+  }
+)();
+
+
+Callbacks:
+
+const nameConst = function a (functionB){
+  instruction;
+  return functionB(parameters);
+}
+
+Parameters:
+
+Default values: 
+
+    Ex.: function example(array, num = 1){  //this num = 1 set a Default value for num if it's will not past as parameter
+      ....
+    }
+
+
+Object arguments: is an array with all parameters past when the function was invoked 
+
+Array and Objects:
+
+  Spread: ...dataStructure.
+       ex.:
+         function sum(x, y, z){
+          return x+y+z;
+        }
+
+        const numbers = [1, 2, 3];
+        console.log(sum(...numbers)); 
+  
+  Rest: combine the arguments in a array
+        ex.:
+         function len(...args){
+          console.log(args,length)
+        }
+
+        len(); //0
+        len(1, 2); // 2
+        len(3, 5, 4); // 3
+  
+  Destructuring:
+      ex.:
+          const user = {
+            id: 42,
+            displayName: 'jdoe',
+            fullName = {
+              firstName: 'John',
+              lastName: 'Doe'
+            }
+          };
+
+          function userId(id){
+            return id;
+          }
+
+          function getFullName({fullName: {firstName: first, lastName: last}}){
+            return `${first} ${last}`;
+          }
+
+          userId(user); //42
+          getFullName(user). //John Doe
+
+
+Loops:
+
+      Switch always does === and should have a default value
+
+      for(prop in obj) // enumerable properties (properties of obj)
+
+      for(prop of obj) // iterable Structure like array ans strings
+
+This:
+
+    context reference:
+    
+          in an Object ---- 'this' references this Object
+          alone ----- 'this' references global object (in browsers, window) 
+          function ----- ´this' references global object
+          event ---- element wich receves the event
+
+
+
+    const person = {
+      firstName: "Gibran",
+      lastName: "Menezes",
+      id: 1,
+      fullName: function() {
+        return this.firstName + " " + this.lastName;
+      },
+      getId: function() {
+        return this.id;
+      }
+    }
+
+    console.log(person.fullName());
+    console.log(person.getId());
