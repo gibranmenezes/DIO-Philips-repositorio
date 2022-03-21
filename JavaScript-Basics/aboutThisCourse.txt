@@ -1,0 +1,37 @@
+modules in JS:
+    Modules are JS files which can export and import informations from anothers same type files.
+    Dependence tree
+
+Advantages:
+  Organizations
+  Sharing variable for different scopes
+  
+
+
+Export:
+    export function nameFunctions(){
+
+    }
+
+    export{
+      function1,
+      function2,
+      .
+      .
+      .
+    }
+
+    *Default Export: only ONE per file. Dafault return
+
+Import:
+    import {function, variable, class} from './fileName.js'
+
+    import valueDefault from './fileName.js'
+
+    import {function as alias}.....
+
+In HTML
+
+<script type="module" src .....
+
+Search abou strict mode

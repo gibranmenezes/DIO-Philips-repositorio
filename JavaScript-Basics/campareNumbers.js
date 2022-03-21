@@ -10,8 +10,6 @@ function compareNumber(num1, num2){
 
 }
 
-
-
 function getFirstReturn(num1, num2){
   let areEquals = '';
   if(num1 !== num2){
