@@ -106,7 +106,7 @@ This:
       firstName: "Gibran",
       lastName: "Menezes",
       id: 1,
-      fullName: function() {
+      fullName: function() { ------ a function inside an object is called Method
         return this.firstName + " " + this.lastName;
       },
       getId: function() {
@@ -116,3 +116,72 @@ This:
 
     console.log(person.fullName());
     console.log(person.getId());
+
+    Methods to manipulate 'this':
+        --Call: 
+              ex.:
+                const person = {
+                  name: 'Gibran'
+                }
+
+                const animal = {
+                  name: 'Oreo'
+                }
+          
+          apply with parameter
+
+                const myObj = {
+                    num1: 2,
+                    num2: 4
+                };
+
+                function sum(a,b){
+                    console.log(this.num1 + this.num2 + a + b);
+                }
+
+                sum.apply(myObj, 1, 5);
+          
+          Apply
+
+              
+                const person = {
+                  name: 'Gibran'
+                }
+
+                const animal = {
+                  name: 'Oreo'
+                }
+
+                function getSomething(){
+                   console.log(this.name);
+                }
+
+                  getSomething.apply(person);
+                  getSomething.apply(animal);
+          
+          apply with parameter
+
+                const myObj = {
+                    num1: 2,
+                    num2: 4
+                };
+
+                function sum(a,b){
+                    console.log(this.num1 + this.num2 + a + b);
+                }
+
+                sum.apply(myObj, [1, 5]) ---passing parameter as an array
+
+          bind: clone the function where it is called and apply the objetc value past as parameter.
+
+            const returnNames = function(){
+              return this.name;
+            }
+
+            let gibran = returnNames.bind({name: 'Gibran'});
+
+            gibran();
+
+
+Arrow Functions:
+    
