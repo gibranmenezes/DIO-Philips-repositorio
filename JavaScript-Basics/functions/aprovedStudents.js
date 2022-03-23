@@ -1,34 +1,33 @@
 const students = [
-    {
-        name: 'Tony',
-        grade: 5,
-        class: '1B',
-    },
-    {
-        name: 'Jany',
-        grade: 9,
-        class: '1B',
-    },
-    {
-        name: 'Lucy',
-        grade: 6,
-        class: '2C',
-    },
+	{
+		name: 'Tony',
+		grade: 5,
+		class: '1B',
+	},
+	{
+		name: 'Jany',
+		grade: 9,
+		class: '1B',
+	},
+	{
+		name: 'Jessy',
+		grade: 6,
+		class: '2C',
+	},
 ];
 
-function aprovedStudents(arr, result) {
-    let aproved = [];
+function aprovedStudents(students, average) {
+	let aproved = [];
 
-    for (let i = 0; i < arr.lenght; i++) {
-        
-        const { grade, name } = arr[i];
+	for (let i = 0; i < students.length; i++) {
+		let { grade, name } = students[i];
 
-        if (grade >= result) {
-            aproved.push(name);
-        }
-    }
+		if (grade >= average) {
+			aproved.push(name);
+		}
+	}
 
-    return aproved;
+	return aproved;
 }
 
-console.log(aprovedStudents(students, 6));
+console.log(aprovedStudents(students, 5));
