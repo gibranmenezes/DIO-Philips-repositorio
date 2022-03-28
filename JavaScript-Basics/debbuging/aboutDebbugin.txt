@@ -1,0 +1,29 @@
+-=-=-=-=-=-=-=Tipos de Erros=-=-=-=-=-=-=-=-
+
+ECMAScript ERROR - runtime error
+    Composto: msg, nome, linha, call stack
+
+
+DOMException - relacionados ao codigo rodado em uma pagina na web (DOM)
+
+
+-=-=-=-=-=-=-=-=-=Tratamento de Erros =-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Throw: lança a exceção na pilha de execução
+
+Try/Catch:
+    Se houver erro no bloco try ele é capturado no bloco catch. No catch pode-se manipular as propriedades de Tratamento do erro
+
+Finally:
+    Sempre será executado havendo ou não um erro.
+ 
+ -=-=-=-=-=-=-=-=-= Objeto ERROR =-=-=-=-=-=-=-=-=-=-
+
+ new Error(mensagem, fileName, lineNumber) os dois ultimos não são padrão
+
+pode ter nome:
+    const meuErro = new Error('Mnesagem inválida');
+    meuErro.name = 'Mensagem inválida';
+
+
+
