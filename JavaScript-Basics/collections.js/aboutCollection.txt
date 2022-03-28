@@ -1,0 +1,34 @@
+MAP
+
+coleção de arrays: chave/valor
+
+iteração : for of
+
+Metodos
+
+map.set(chave, valor)
+map.get(chave)
+map.delete(chave)
+
+                             map         x         objetos
+chave/valor:                qq tipo                  string
+.length                       não                     sim
+iteração                    + facil
+valor da chave          -necessario conhecer
+
+SET
+
+conjunto de valores únicos
+
+Metodos
+
+set.add(valor)
+set.has(valor)
+set.delete(valor)
+
+                             set         x         array
+tamanho                     set.size()             array.length
+
+
+set não tem
+reduce, map, filter...
