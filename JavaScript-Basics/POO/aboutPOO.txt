@@ -1,0 +1,14 @@
+-=-=-=-=-=-=-Paradigmas e Pilares-=-=-=-=-=-=-=-=-
+Herança - Objetos e Metodos herdados
+Polimorfismo - 
+Encapsulamento - 
+Abstração - ocultar caracteristicas e propriedades para simplificar
+
+
+-=-=-=-=-=- Protótipos e Classes -=-=-=-=-=-
+
+Protótipo: é o esqueleto de todo Objeto. Todo objeto tem seu Protótipo com todos os metodos contidos nesse prototipo.
+
+Classes (sintaxe sugar):
+    Não são nativas no JS
+    Por baixo dos panos são objetos. 
