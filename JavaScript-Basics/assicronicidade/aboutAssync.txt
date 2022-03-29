@@ -1,0 +1,22 @@
+-=-=-=-=-=-=-=- Assíncronicidade -=-=-=-=-=-=-=-
+Sincrono:
+        Client                      Server
+        request ------------------->  |
+            |                         |
+        awaiting                      |
+            |<--------------------send reponse
+
+Assíncrono:
+        Client                      Server
+        request ------------------->  |
+            |                         |
+        continue                      |
+        working                       |
+            |                         |
+        get response  <--------  send reponse
+        do something
+
+
+=-=-=-=-=- Promises -=-=-=-=-=
+Pode ser resolvida ou rejeitada - fazer analogia com o ingresso de um filme
+
